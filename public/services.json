@@ -1,0 +1,44 @@
+[
+    {
+      "id": 1,
+      "name": "HOME SUPPORT",
+      "price": "120",
+      "description": "In-home care to help seniors and adults with everyday tasks.",
+      "img": "https://i.ibb.co/mth7QtD/room-1.jpg"
+    },
+    {
+      "id": 2,
+      "name": "TRANSITIONAL CARE",
+      "price": "170",
+      "description": "Optimize recovery and enjoy a safe return home from the hospital with our unique approach.",
+      "img": "https://i.ibb.co/QXYyzL1/room-2.jpg"
+    },
+    {
+      "id": 3,
+      "name": "SENIOR CARE",
+      "price": "260",
+      "description": "Team-based approach to compassionate and trustworthy care.",
+      "img": "https://i.ibb.co/gWZFWv7/room-3.jpg"
+    },
+    {
+      "id": 4,
+      "name": "PERSONAL CARE",
+      "price": "140",
+      "description": "We are ready to assist with any personal care needs — bathing, grooming, eating, and more..",
+      "img": "https://i.ibb.co/RSv3qhJ/room-4.jpg"
+    },
+    {
+      "id": 5,
+      "name": "COMPANION CARE",
+      "price": "86",
+      "description": "Our companionship support helps with daily activities and monitors health and wellness.",
+      "img": "https://i.ibb.co/K729GVs/room-5.jpg"
+    },
+    {
+      "id": 6,
+      "name": "CHILD CARE",
+      "price": "57",
+      "description": "Our child care support ranges from sitter services to skilled-pediatric nursing.",
+      "img": "https://i.ibb.co/tXgNpLs/room-6.jpg"
+    }
+  ]

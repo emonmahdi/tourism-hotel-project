@@ -1,0 +1,27 @@
+#footer-section{
+    padding:50px 0;
+    background-color: #2F2F2F;
+    color:#fff
+}
+.social-link a{
+    text-decoration: none;
+    color:#fff;
+    font-size: 20px;
+    display: inline-block;
+    text-align: left;
+    margin-right: 15px;
+}
+.links a{
+    display: block;
+    text-decoration: none;
+    color:#fff;
+    font-size: 20px;
+}
+@media screen and (max-width:592px){ 
+    #footer-section{
+        text-align: left!important;
+    }
+    .single-row{
+        margin-bottom: 30px;
+    }
+}

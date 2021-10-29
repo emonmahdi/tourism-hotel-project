@@ -1,0 +1,9 @@
+.carousel-item img{
+    height: 90vh; 
+    opacity: .4;
+}
+.carousel-item{ 
+    width: 100vw;
+    background: black;
+    overflow: hidden;
+}
