@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const Service = ({service}) => {
 
     useEffect( () => {
-        fetch(`http://localhost:5000/rooms`)
+        fetch(`https://radiant-ocean-16020.herokuapp.com/rooms`)
             .then(res => res.json())
             .then(data => console.log(data))
     },[])

@@ -12,7 +12,7 @@ const Slider = () => {
                 <Carousel.Item>
                     <img
                     className="d-block w-100"
-                    src={slider1}
+                    src='https://i.ibb.co/pfkjhy8/pexels-photo-1457845.jpg'
                     alt="First slide"
                     />
                     <Carousel.Caption>
@@ -25,7 +25,7 @@ const Slider = () => {
                 <Carousel.Item>
                     <img
                     className="d-block w-100"
-                    src={slider2}
+                    src='https://i.ibb.co/w0c2qnR/pexels-photo-2869215.jpg'
                     alt="Second slide"
                     />
 
@@ -39,7 +39,7 @@ const Slider = () => {
                 <Carousel.Item>
                     <img
                     className="d-block w-100"
-                    src={slider3}
+                    src='https://i.ibb.co/smZWXFj/pexels-photo-6284232.jpg'
                     alt="Third slide"
                     />
 

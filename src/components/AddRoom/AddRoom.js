@@ -2,21 +2,35 @@ import React from 'react';
 import { useForm } from 'react-hook-form';
 
 const AddRoom = () => {
-        const { register, handleSubmit, watch, formState: { errors } } = useForm();
+        const { register, handleSubmit, reset,watch, formState: { errors } } = useForm();
+        const axios = require('axios');
        const onSubmit = data => {
            
-           fetch(`https://radiant-ocean-16020.herokuapp.com/addRoom`, {
-               method: 'POST',
-               headers: {
-                   'content-type' : 'application/json'
-               },
-               body:JSON.stringify(data)
-           })
-           .then(res => res.json())
-           .then(result => {
-               console.log(result)
+        axios.post('https://radiant-ocean-16020.herokuapp.com/rooms', data)
+            .then(res => {
+                if(res.data.insertedId){
+                    alert('Added Successfully');
+                    reset();
+                }
             })
-           console.log(data)
+
+
+
+
+
+
+        //    fetch(`https://radiant-ocean-16020.herokuapp.com/addRoom`, {
+        //        method: 'POST',
+        //        headers: {
+        //            'content-type' : 'application/json'
+        //        },
+        //        body:JSON.stringify(data)
+        //    })
+        //    .then(res => res.json())
+        //    .then(result => {
+        //        console.log(result)
+        //     })
+        //    console.log(data)
         };
     return (
         <div className='container'>

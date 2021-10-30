@@ -1,0 +1,11 @@
+.about-us{
+    padding:60px 0;
+    background-color: #ddd;
+}
+.about-body ul {
+    margin-top: 60px;
+}
+.about-body ul li{
+    margin:12px 0;
+    font-weight: bold;
+}

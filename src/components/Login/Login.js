@@ -5,14 +5,15 @@ import useFirebase from '../hooks/useFirebase';
 
 const Login = () => {
     const [user, setUser] = useState({});
-    const {signInUsingGoogle} = useFirebase();
+    const {signInUsingGoogle} = useFirebase(); 
     const [error, setError] = useState('');
     const location = useLocation();
     const history = useHistory();
     const redirect_uri = location.state?.from || '/home'
 
-    const handleGoogleLogin = () => {
+    const handleGoogleLogin = () => {  
         signInUsingGoogle()
+        
         .then((result) => {
             console.log(result.user)
             history.push(redirect_uri);

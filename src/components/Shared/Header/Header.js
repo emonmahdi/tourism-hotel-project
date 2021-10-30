@@ -6,7 +6,7 @@ import useAuth from '../../hooks/useAuth';
 const Header = () => {
     const {user, logOut} = useAuth();
     return (
-        <>
+        <> 
         <Navbar bg="success" variant="dark" sticky="top" collapseOnSelect expand="lg">
             <Container>
             <Navbar.Brand to="#home"> <span className='text-dark'>
@@ -28,6 +28,8 @@ const Header = () => {
                     <Button onClick={logOut} variant='light'>Logout</Button> 
                     : 
                     <Nav.Link as={Link} to="/login" className='btn btn-dark text-light'>Login</Nav.Link>}
+ 
+
  
                 </Nav>
                 <Navbar.Text>

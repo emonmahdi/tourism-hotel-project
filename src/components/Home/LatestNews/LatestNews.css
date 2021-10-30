@@ -1,0 +1,18 @@
+.latest-news{ 
+    padding:60px 0;
+}
+.single-news a{ 
+     font-size: 20px;
+    color:orange;
+}
+.single-news h3{
+    font-weight: bold;
+}
+.single-news h3, p{
+    margin:10px  0;
+
+}
+.single-event{
+    background-color: #fff;
+    padding: 20px;
+}
