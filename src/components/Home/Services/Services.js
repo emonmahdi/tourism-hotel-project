@@ -7,10 +7,10 @@ const Services = () => {
     const [services, setServices] =  useState([]);
 
     useEffect( () => {
-        fetch('./services.json')
+        fetch('https://radiant-ocean-16020.herokuapp.com/rooms')
             .then(res => res.json())
             .then(data => setServices(data))
-    }, [])
+    }, []);
 
     return (
         <div id='services' className='py-5'>
