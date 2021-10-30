@@ -24,8 +24,11 @@ const Header = () => {
                    
                     {/* <Button variant='light'>Logout</Button> */}
                     {user?.email?
-                    <Button onClick={logOut} variant='light'>Logout</Button>: 
+                     
+                    <Button onClick={logOut} variant='light'>Logout</Button> 
+                    : 
                     <Nav.Link as={Link} to="/login" className='btn btn-dark text-light'>Login</Nav.Link>}
+ 
                 </Nav>
                 <Navbar.Text>
                     

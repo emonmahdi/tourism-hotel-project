@@ -15,7 +15,7 @@ const Service = ({service}) => {
                         <h6> ${price} / <span className='text-info'>Night </span></h6>
                     </div>
                     <Link  to={`/service/${id}`}>
-                        <button className='btn service-btn'>Purches</button>
+                        <button className='btn service-btn ms-3' >Booking</button>
                     </Link> 
                 </div>
             </div>

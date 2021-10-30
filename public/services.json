@@ -1,1 +1,44 @@
- 
+[
+    {
+      "id": 1,
+      "name": "DELUXE ROOM",
+      "price": "120",
+      "description": "To complement the scenic view and elegant decor, we furnish all Deluxe rooms with the latest technology including LED Smart Television sets, universal plugs and phone charging systems, High-Speed internet access, a laptop safe, and various entertainment features. The rooms offer the ultimate convenience packaged into a bright, airy, naturally lit accommodation. Each room has got oversize work desks which are equipped with all office supplies for the guest’s convenience.",
+      "img": "https://i.ibb.co/mth7QtD/room-1.jpg"
+    },
+    {
+      "id": 2,
+      "name": "TWIN DELUXE",
+      "price": "170",
+      "description": "Twin Deluxe has got 30m2 in size. To complement the scenic view and elegant decor, we furnish all Deluxe rooms with the latest technology including LED Smart Television sets, universal plugs and phone charging systems, High speed internet access, a laptop safe, and various entertainment features. The rooms offer the ultimate convenience packaged into a bright, airy, naturally lit accommodation. Each room has got over-sized work desks which are equipped  ",
+      "img": "https://i.ibb.co/QXYyzL1/room-2.jpg"
+    },
+    {
+      "id": 3,
+      "name": "BUSINESS CLASS",
+      "price": "260",
+      "description": "Business Class has got 30m2 in size. To complement the scenic view and elegant decor, we furnish all Business Class rooms with the latest technology including LED Smart Television sets, universal plugs and phone charging systems, High speed internet access, a laptop safe, and various entertainment features. The rooms offer the ultimate convenience packaged into a bright, airy, naturally lit accommodation. Each room has got over-sized work desks which are equipped with all office supplies for the convenience.",
+      "img": "https://i.ibb.co/gWZFWv7/room-3.jpg"
+    },
+    {
+      "id": 4,
+      "name": "JUNIOR SUITE WITH KITCHENETTE",
+      "price": "140",
+      "description": "Junior Suite has got 52m2 include balcony in size. The Suite also come furnished with a fully-equipped modern kitchen, including an induction cook top stove to ensure your utmost safety and comfort. At Six Seasons, we take every aspect of your comfort seriously. That is why, we have affixed the latest 3D LED television set of 67 inch, along with all the amenities and features of a Suite room, our full marble Suite bathrooms offer the added luxury of a separate bath and shower enclosure ",
+      "img": "https://i.ibb.co/RSv3qhJ/room-4.jpg"
+    },
+    {
+      "id": 5,
+      "name": "ROYAL SUITE WITH KITCHENETTE",
+      "price": "86",
+      "description": "Royal Suite has got 75m2 include balcony in size. The Suite also come furnished with a fully-equipped modern kitchen, including an induction cook top stove to ensure your utmost safety and comfort. At Six Seasons, we take every aspect of your comfort seriously. That is why, we have affixed the latest 3D LED television set of 67 inch, along with all the amenities and features of a Suite room, our full marble Suite bathrooms offer the added luxury of a separate bath and shower enclosure ",
+      "img": "https://i.ibb.co/K729GVs/room-5.jpg"
+    },
+    {
+      "id": 6,
+      "name": "SINGLE ROOM",
+      "price": "67",
+      "description": "The rooms offer the ultimate convenience packaged into a bright, airy, naturally lit accommodation. Each room has got over-sized work desks which are equipped with all office supplies for the convenience. Two Single bed and full marble bathrooms in every guest room each with a quick-filling, deep soaking tub, rainfall shower.That is why, we have affixed the latest 3D LED television set of 67 inch, along with all the amenities and features of a Suite room",
+      "img": "https://i.ibb.co/tXgNpLs/room-6.jpg"
+    }
+  ]
