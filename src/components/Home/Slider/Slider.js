@@ -16,7 +16,7 @@ const Slider = () => {
                     alt="First slide"
                     />
                     <Carousel.Caption>
-                    <h6>For Your Company</h6>
+                    <h6>For Your Journey</h6>
                     <h1>Trusted Help from Our Family to Yours</h1>
                     <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
                     <button className='btn btn-warning'>Learn More</button>
@@ -30,9 +30,9 @@ const Slider = () => {
                     />
 
                     <Carousel.Caption>
-                    <h6>For Your Home</h6>
+                    <h6>For Your Family</h6>
                     <h1>Living Assistance Service</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <p>You can visit our hotel of all your family members</p>
                     <button className='btn btn-warning'>Learn More</button>
                     </Carousel.Caption>
                 </Carousel.Item>
@@ -44,7 +44,7 @@ const Slider = () => {
                     />
 
                     <Carousel.Caption>
-                    <h6>For Your Safe</h6>
+                    <h6>For Your Tour</h6>
                     <h1>Quality Home Care for Seniors</h1>
                     <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
                     <button className='btn btn-warning'>Learn More</button>

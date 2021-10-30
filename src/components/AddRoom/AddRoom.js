@@ -12,12 +12,7 @@ const AddRoom = () => {
                     alert('Added Successfully');
                     reset();
                 }
-            })
-
-
-
-
-
+            }) 
 
         //    fetch(`https://radiant-ocean-16020.herokuapp.com/addRoom`, {
         //        method: 'POST',

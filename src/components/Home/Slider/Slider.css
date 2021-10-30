@@ -7,3 +7,6 @@
     background: black;
     overflow: hidden;
 }
+.carousel-caption{
+    bottom: 12rem !important;
+}

@@ -12,6 +12,7 @@ const ServiceDetails = () => {
     const [singleDetails, setSingleDetails] = useState([]);
     
     const [getDetails, setGetDetails] = useState({})
+    console.log(getDetails)
 
     useEffect( () => {
         fetch('https://radiant-ocean-16020.herokuapp.com/rooms') 
@@ -23,8 +24,19 @@ const ServiceDetails = () => {
       const details = singleDetails.find(td => td.id == Id );
       setGetDetails(details);
     }, [singleDetails])
-       
-
+    // ===========================================
+    const { register, handleSubmit, reset,watch, formState: { errors } } = useForm();
+       const axios = require('axios');
+       const onSubmit = data => {
+           
+        axios.post('http://localhost:5000/myorder', data)
+            .then(res => {
+                if(res.data.insertedId){
+                    alert('Order Booking Confirm');
+                    reset();
+                }
+            })
+       }
     return (
         <div className='container my-4 pb-5'>
             <div className="row">
@@ -42,17 +54,29 @@ const ServiceDetails = () => {
                 </div>
                 <div className="col-lg-5">
                 <h3 className='mb-3 fw-bold'>Booking Order Information</h3>
-                    <div className="form my-3 bg-light p-3">
-                        
+                    {/* <div className="form my-3 bg-light p-3"> 
                         <input className='form-control mb-2' type="text" placeholder='Name' value={user.displayName} />
                         <input className='form-control mb-2' type="email" placeholder='email' value={user.email}  />
                         <input className='form-control mb-2' type="text" placeholder='email' value={getDetails?.name}  />
                         <input className='form-control mb-2' type="adress" placeholder='Address' /> 
                         <input className='form-control mb-2' type="phone" placeholder='Phone' />  
-                        <input type="submit" className='btn btn-warning' value='Book order' />
+                        <input type="submit" className='btn btn-warning' value='Book order' /> 
+                    </div> */}
+                    <form onSubmit={handleSubmit(onSubmit) } className='p-3 border'> 
+                        <input type='text' className='form-control mb-2'   {...register("name")} value={user.displayName} placeholder='Name' />
+                          
+
+                        <input type='text' value={user.email} className='form-control mb-2' {...register("email", { required: true })} placeholder='Email' />  
  
+
+                        <input type='text' className='form-control mb-2' {...register("address", { required: true })} placeholder='Address' /> 
+
+                        <input type='number' className='form-control mb-2' {...register("phone", { required: true })} placeholder='Phone' /> 
+
+                        {errors.exampleRequired && <span>This field is required</span>}
                         
-                    </div>
+                        <input className='btn btn-warning' value='Order Booking' type="submit" />
+                    </form>
                 </div>
             </div>  
         </div>
