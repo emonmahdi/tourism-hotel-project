@@ -10,10 +10,10 @@ const ServiceDetails = () => {
     const [getDetails, setGetDetails] = useState({})
 
     useEffect( () => {
-        fetch('/services.json')
+        fetch('https://radiant-ocean-16020.herokuapp.com/rooms') 
             .then(res => res.json())
             .then(data => setSingleDetails(data))
-    }, [])
+    }, []) 
 
     useEffect( () => {
       const details = singleDetails.find(td => td.id == Id );

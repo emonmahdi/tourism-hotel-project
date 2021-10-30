@@ -9,6 +9,7 @@ import Login from './components/Login/Login';
 import AuthProvider from './contexts/AuthProvider';
 import ServiceDetails from './components/ServiceDetails/ServiceDetails';
 import PrivateRoute from './components/Login/PrivateRoute/PrivateRoute';
+import AddRoom from './components/AddRoom/AddRoom';
 
 function App() {
   return (
@@ -25,6 +26,9 @@ function App() {
             </Route>
             <Route exact path='/login'>
               <Login></Login>
+            </Route>
+            <Route exact path='/room'>
+               <AddRoom></AddRoom>
             </Route>
             <PrivateRoute path='/service/:Id'>
                 <ServiceDetails></ServiceDetails>

@@ -19,7 +19,7 @@ const Header = () => {
                     <Nav.Link as={Link} to="/home">Home</Nav.Link>
                     <Nav.Link to="/home#services">Services</Nav.Link>
                     <Nav.Link to="/about">About Us</Nav.Link>
-                    <Nav.Link to="/blog">Blog</Nav.Link>
+                    <Nav.Link as={Link}  to="/room">Add Rooms</Nav.Link>
                     <Nav.Link to="/home#contact">Contact</Nav.Link>
                    
                     {/* <Button variant='light'>Logout</Button> */}

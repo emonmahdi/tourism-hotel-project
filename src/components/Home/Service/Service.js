@@ -1,9 +1,15 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './Service.css';
 import { Link } from 'react-router-dom';
 
 const Service = ({service}) => {
-    
+
+    useEffect( () => {
+        fetch(`http://localhost:5000/rooms`)
+            .then(res => res.json())
+            .then(data => console.log(data))
+    },[])
+
         const {id, name, img, description, price} =  service;
         return (
             <div className='col-lg-6 col-md-6 col-sm-6'>
