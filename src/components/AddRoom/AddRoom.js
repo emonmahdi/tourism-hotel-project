@@ -2,7 +2,7 @@ import React from 'react';
 import { useForm } from 'react-hook-form';
 
 const AddRoom = () => {
-        const { register, handleSubmit, reset,watch, formState: { errors } } = useForm();
+        const { register, handleSubmit, reset, formState: { errors } } = useForm();
         const axios = require('axios');
        const onSubmit = data => {
            

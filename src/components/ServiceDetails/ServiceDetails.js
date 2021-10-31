@@ -7,9 +7,10 @@ const ServiceDetails = () => {
 
     const {Id} = useParams(); 
     const {user} = useAuth();
-    console.log(user);
+    // console.log(user);
 
     const [singleDetails, setSingleDetails] = useState([]);
+    // console.log(singleDetails)
     
     const [getDetails, setGetDetails] = useState({})
     console.log(getDetails)
@@ -23,12 +24,13 @@ const ServiceDetails = () => {
     useEffect( () => {
       const details = singleDetails.find(td => td.id == Id );
       setGetDetails(details);
-    }, [singleDetails])
+    }, [singleDetails]);
     // ===========================================
-    const { register, handleSubmit, reset,watch, formState: { errors } } = useForm();
+    const { register, handleSubmit, reset, formState: { errors } } = useForm();
        const axios = require('axios');
        const onSubmit = data => {
-           
+           console.log(data)
+           data.getDetails= getDetails;
         axios.post('http://localhost:5000/myorder', data)
             .then(res => {
                 if(res.data.insertedId){

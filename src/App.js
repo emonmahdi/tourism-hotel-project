@@ -31,9 +31,9 @@ function App() {
             <Route exact path='/room'>
                <AddRoom></AddRoom>
             </Route>
-            <Route exact path='/myorder'>
+            <PrivateRoute exact path='/myorder'>
                <MyOrder></MyOrder>
-            </Route>
+            </PrivateRoute>
             <PrivateRoute path='/service/:Id'>
                 <ServiceDetails></ServiceDetails>
             </PrivateRoute>
