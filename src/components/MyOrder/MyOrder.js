@@ -9,7 +9,7 @@ const MyOrder = () => {
     console.log(orders);
     const emai = user?.email 
     useEffect( () => {
-        fetch(`http://localhost:5000/order/${emai}`)
+        fetch(`https://radiant-ocean-16020.herokuapp.com/order/${emai}`)
             .then(res => res?.json())
             .then(data => setOrders(data));
     }, []);
@@ -17,7 +17,7 @@ const MyOrder = () => {
     const handleDeleteOrder = id => { 
        const procced = window.confirm('Are you sure you want to Remove Order');
        if(procced){
-            const url = `http://localhost:5000/order/${id}`;
+            const url = `https://radiant-ocean-16020.herokuapp.com/order/${id}`;
                 fetch(url, { 
                     method: 'DELETE', 
                 })

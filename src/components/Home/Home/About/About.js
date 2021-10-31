@@ -4,10 +4,10 @@ import './About.css'
 
 const About = () => {
     return (
-        <div className='about-us'>
+        <div className='about-us' id="about">
             <div className="container">
-                <h2 className='text-danger fw-bold text-center mb-5'>Why Choos Our Hotel</h2>
-                <div className="row py-4 about-body">
+                <h2 className='text-danger fw-bold mb-4 text-center'>Why Choos Our Hotel</h2>
+                <div className="row  about-body">
                     <div className="col-lg-6">
                         <ul>
                             <li>Wellness And Poll</li>

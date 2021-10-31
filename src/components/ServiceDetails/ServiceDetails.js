@@ -32,7 +32,7 @@ const ServiceDetails = () => {
            console.log(data) 
         //    data.status = 'Pending';
            data.getDetails= getDetails;
-        axios.post('http://localhost:5000/myorder', data)
+        axios.post('https://radiant-ocean-16020.herokuapp.com/myorder', data)
             .then(res => {
                 if(res.data.insertedId){
                     alert('Order Booking Confirm');

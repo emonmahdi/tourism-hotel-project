@@ -9,3 +9,8 @@
     margin:12px 0;
     font-weight: bold;
 }
+@media screen and (max-width:592px){
+    .about-us h2{
+        margin-bottom: 10px!important;
+    }
+}

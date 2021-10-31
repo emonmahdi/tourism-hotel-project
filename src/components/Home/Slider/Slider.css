@@ -10,3 +10,9 @@
 .carousel-caption{
     bottom: 12rem !important;
 }
+
+@media screen and (max-width:592px){
+    .carousel-caption{
+        bottom: 6rem !important;
+    }
+}

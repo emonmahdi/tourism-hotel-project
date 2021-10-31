@@ -19,10 +19,18 @@ const Header = () => {
                 <Nav className="">
                     <Nav.Link as={Link} to="/home">Home</Nav.Link>
                     <Nav.Link as={HashLink} to="/home#services">Services</Nav.Link>
-                    <Nav.Link to="/about">About Us</Nav.Link>
-                    <Nav.Link as={Link}  to="/room">Add Rooms</Nav.Link>
-                    <Nav.Link as={Link}  to="/myorder">My Orders</Nav.Link>
-                    <Nav.Link as={Link}  to="/manageorder">Manag All Orders</Nav.Link>
+                    <Nav.Link as={HashLink} to="/home#about">About Us</Nav.Link>
+                    {
+                        user?.email? <Nav.Link as={Link}  to="/room">Add Rooms</Nav.Link>: ''
+                    }
+                    {
+                        user?.email ? <Nav.Link as={Link}  to="/myorder">My Orders</Nav.Link> :
+                        ''
+                    }
+                    {
+                        user?.email ? <Nav.Link as={Link}  to="/manageorder">Manag All Orders</Nav.Link> :
+                        ''
+                    }
                     <Nav.Link to="/home#contact">Contact</Nav.Link>
                    
                     {/* <Button variant='light'>Logout</Button> */}
@@ -31,7 +39,7 @@ const Header = () => {
                     <Button onClick={logOut} variant='light'>Logout</Button> 
                     : 
                     <Nav.Link as={Link} to="/login" className='btn btn-dark text-light'>Login</Nav.Link>}
- 
+                    
 
  
                 </Nav>
