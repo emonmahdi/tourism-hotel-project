@@ -25,7 +25,7 @@ const Login = () => {
         });
     }
     return (
-        <div className='container w-25 border mx-auto p-4 text-center mt-5 '>
+        <div className='container w-25 border mx-auto p-4 text-center my-5 '>
             <h2>Please Login</h2>
             <button onClick={handleGoogleLogin} className='btn btn-primary mt-3'>Google Sign In</button>
         </div>

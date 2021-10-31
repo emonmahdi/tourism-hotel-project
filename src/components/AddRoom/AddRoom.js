@@ -13,24 +13,12 @@ const AddRoom = () => {
                     reset();
                 }
             }) 
-
-        //    fetch(`https://radiant-ocean-16020.herokuapp.com/addRoom`, {
-        //        method: 'POST',
-        //        headers: {
-        //            'content-type' : 'application/json'
-        //        },
-        //        body:JSON.stringify(data)
-        //    })
-        //    .then(res => res.json())
-        //    .then(result => {
-        //        console.log(result)
-        //     })
-        //    console.log(data)
+ 
         };
     return (
-        <div className='container'>
+        <div className='container '>
             <h3 className='text-center fw-bold my-4'>Add Rooms Informations</h3>
-            <div className="row"> 
+            <div className="row my-5 "> 
                 <div className="col-lg-6 text-center">
                     <form onSubmit={handleSubmit(onSubmit) } className='p-3 border'> 
                         <input type='text' className='form-control mb-2'   {...register("name")} placeholder='Add Title' />

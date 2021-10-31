@@ -11,6 +11,7 @@ import ServiceDetails from './components/ServiceDetails/ServiceDetails';
 import PrivateRoute from './components/Login/PrivateRoute/PrivateRoute';
 import AddRoom from './components/AddRoom/AddRoom';
 import MyOrder from './components/MyOrder/MyOrder';
+import Footer from './components/Shared/Footer/Footer';
 
 function App() {
   return (
@@ -28,9 +29,9 @@ function App() {
             <Route exact path='/login'>
               <Login></Login>
             </Route>
-            <Route exact path='/room'>
+            <PrivateRoute exact path='/room'>
                <AddRoom></AddRoom>
-            </Route>
+            </PrivateRoute>
             <PrivateRoute exact path='/myorder'>
                <MyOrder></MyOrder>
             </PrivateRoute>
@@ -41,6 +42,7 @@ function App() {
               <NotFound></NotFound>
             </Route>
           </Switch>
+          <Footer></Footer>
         </BrowserRouter>
         </AuthProvider>
     </div>
