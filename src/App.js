@@ -12,6 +12,7 @@ import PrivateRoute from './components/Login/PrivateRoute/PrivateRoute';
 import AddRoom from './components/AddRoom/AddRoom';
 import MyOrder from './components/MyOrder/MyOrder';
 import Footer from './components/Shared/Footer/Footer';
+import ManagOrders from './components/ManageOrders/ManagOrders';
 
 function App() {
   return (
@@ -34,6 +35,9 @@ function App() {
             </PrivateRoute>
             <PrivateRoute exact path='/myorder'>
                <MyOrder></MyOrder>
+            </PrivateRoute>
+            <PrivateRoute exact path='/manageorder'>
+               <ManagOrders></ManagOrders>
             </PrivateRoute>
             <PrivateRoute path='/service/:Id'>
                 <ServiceDetails></ServiceDetails>

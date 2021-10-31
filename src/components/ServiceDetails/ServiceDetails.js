@@ -4,7 +4,7 @@ import { useParams } from 'react-router';
 import useAuth from '../hooks/useAuth';
 
 const ServiceDetails = () => { 
-
+    const status = 'Pending'
     const {Id} = useParams(); 
     const {user} = useAuth();
     // console.log(user);
@@ -29,7 +29,8 @@ const ServiceDetails = () => {
     const { register, handleSubmit, reset, formState: { errors } } = useForm();
        const axios = require('axios');
        const onSubmit = data => {
-           console.log(data)
+           console.log(data) 
+        //    data.status = 'Pending';
            data.getDetails= getDetails;
         axios.post('http://localhost:5000/myorder', data)
             .then(res => {
@@ -56,14 +57,7 @@ const ServiceDetails = () => {
                 </div>
                 <div className="col-lg-5">
                 <h3 className='mb-3 fw-bold'>Booking Order Information</h3>
-                    {/* <div className="form my-3 bg-light p-3"> 
-                        <input className='form-control mb-2' type="text" placeholder='Name' value={user.displayName} />
-                        <input className='form-control mb-2' type="email" placeholder='email' value={user.email}  />
-                        <input className='form-control mb-2' type="text" placeholder='email' value={getDetails?.name}  />
-                        <input className='form-control mb-2' type="adress" placeholder='Address' /> 
-                        <input className='form-control mb-2' type="phone" placeholder='Phone' />  
-                        <input type="submit" className='btn btn-warning' value='Book order' /> 
-                    </div> */}
+                   
                     <form onSubmit={handleSubmit(onSubmit) } className='p-3 border'> 
                         <input type='text' className='form-control mb-2'   {...register("name")} value={user.displayName} placeholder='Name' />
                           
@@ -74,6 +68,8 @@ const ServiceDetails = () => {
                         <input type='text' className='form-control mb-2' {...register("address", { required: true })} placeholder='Address' /> 
 
                         <input type='number' className='form-control mb-2' {...register("phone", { required: true })} placeholder='Phone' /> 
+
+                        <input type='text' value={status} className='form-control mb-2' {...register("status",  { required: true })} />  
 
                         {errors.exampleRequired && <span>This field is required</span>}
                         

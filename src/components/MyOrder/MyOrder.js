@@ -44,6 +44,7 @@ const MyOrder = () => {
                                 <h3 className='text-primary'>{order?.getDetails?.name}</h3>
                                 <h5 className='my-3'>Id: {order?.getDetails?._id}</h5>
                                 <h6>Price : <span className='text-danger  fw-bold'>${order?.getDetails?.price}</span></h6>
+                                <h6>Status : {order?.status}</h6>
                                 <button onClick={() => handleDeleteOrder(order?._id)} className='btn btn-warning mt-3'>Remove Order</button>
                             </div>
                         </div>
