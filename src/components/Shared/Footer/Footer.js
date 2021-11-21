@@ -24,6 +24,7 @@ const Footer = () => {
                             <a href="#">Services</a>
                             <a href="#">About Us</a>
                             <a href="#">Order </a>
+                            <a href="#">New Services</a>
                         </div>
                     </div>
                     <div className="col-lg-3">
