@@ -7,7 +7,7 @@ This Project Live Server Link [ Hotel Grand Park ] https://radiant-ocean-16020.h
 ## Purpose Of My Website
 
 * This is a Hotel And Resort Support Website.
-* Our Services are very high comfortable all categories people.
-* Our Hotel is an International Quality 
-* We have many Enjoyable and Entertainment Place.
-* Our breakfast, Lunce, Dinner Eating food are so famous
+* This website Google Authentication Features Provide.
+* Our services data is loaded from the server-side.
+* Any user login this website and can order our services and manage orders.
+* This project uses technology- Bootstrap, React, MongoDB, Nodejs, Firebase, Heroku etc
