@@ -5,7 +5,7 @@ import useAuth from '../hooks/useAuth';
 
 const ServiceDetails = () => { 
     const status = 'Pending'
-    const {Id} = useParams(); 
+    const {Id} = useParams();  
     const {user} = useAuth();
     // console.log(user);
 

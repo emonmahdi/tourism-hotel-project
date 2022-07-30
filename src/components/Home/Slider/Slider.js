@@ -9,7 +9,7 @@ const Slider = () => {
         <div>
              <>
              <Carousel>
-                <Carousel.Item>
+                <Carousel.Item> 
                     <img
                     className="d-block w-100"
                     src='https://i.ibb.co/pfkjhy8/pexels-photo-1457845.jpg'

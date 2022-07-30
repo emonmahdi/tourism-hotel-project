@@ -10,7 +10,7 @@ const Service = ({service}) => {
             .then(data => console.log(data))
     },[])
 
-        const {id, name, img, description, price} =  service;
+        const {id, name, img, description, price} =  service; 
         return (
             <div className='col-lg-6 col-md-6 col-sm-6'>
                 <div className="single-service bg-light pb-3 ">
